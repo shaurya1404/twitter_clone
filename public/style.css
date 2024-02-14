@@ -1,0 +1,52 @@
+.heading {
+    color: rgb(106, 148, 226);
+    position: relative;
+    left: 20px;
+}
+div {
+    padding-left: 3mm;
+    padding-bottom: 3mm;
+    margin: 5mm;
+    border: 1mm solid black;
+    background-color: antiquewhite;
+    border-radius: 10mm;
+}
+h4 {
+    font-style: italic;
+}
+a {
+    position: relative;
+    left: 20px;
+    color: rgb(39, 99, 211);
+}
+form {
+    display: inline;
+    position: relative;
+    left: 28px;
+}
+h5 {
+    display: inline;
+}
+body {
+    background-color: black;
+    margin-left: 20px;
+}
+input {
+    display: block;
+    position: relative;
+    bottom: 6px;
+    right: 0px;
+    background-color: rgb(170, 218, 248);;
+}
+button {
+    border: 0;
+    border-radius: 10px;
+    padding: 0 20px;
+    background-color: rgb(106, 148, 226);
+}
+#username {
+    color: rgb(106, 148, 226);
+}
+textarea {
+    background-color: rgb(170, 218, 248);
+}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Post</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1 class="heading">Edit Your Post</h1>
+    <form method="post" action="/home/<%=post.id%>?_method=PATCH">
+        <h4 id="username">@<%=post.username%></h4>
+        <textarea cols="35" rows="10" name="content"><%=post.content%></textarea>&nbsp;&nbsp;
+        <button>Edit</button>
+    </form>
+</body>
+</html>

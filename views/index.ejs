@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/style.css"/>
+</head>
+<body>
+    <h1 class="heading">Welcome to Twitter</h3>
+    <a href="/new">Create A New Post!</a>
+    <% for(post of posts) {%>
+        <div>
+            <h4>@<%=post.username%></h4>
+            <h5>Followers: <%=post.followers%></h5>
+            <h5>Following: <%=post.following%></h5>
+            <p><b><%=post.name%></b>&nbsp;&nbsp;<%=post.content%></p>
+            <a href="/home/<%=post.id%>/edit">Edit Post</a>
+            <form method="post" action="/home/<%=post.id%>?_method=DELETE">
+                <button>Delete</button>
+            </form>
+        </div>
+    <%}%>
+</body>
